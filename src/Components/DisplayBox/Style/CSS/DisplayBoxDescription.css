@@ -1,0 +1,20 @@
+.DisplayBoxDescription {
+  min-width: 700px;
+  display: block;
+  background: #d1d1d1;
+  margin-top: 10px;
+  overflow: hidden;
+
+}
+
+.Collapsed{
+  height: 300px;
+}
+
+.Expanded{
+  min-height: 300px;
+}
+
+.description {
+  padding: 10px;
+}

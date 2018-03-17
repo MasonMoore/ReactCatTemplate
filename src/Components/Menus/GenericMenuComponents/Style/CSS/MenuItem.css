@@ -1,0 +1,13 @@
+.MenuItem {
+  height: 100%;
+  width: 100px;
+  overflow: hidden;
+  float: left;
+}
+
+.MenuItem li {
+  display: block;
+  text-align: center;
+  margin: 0px;
+  padding: 10px 5px;
+}

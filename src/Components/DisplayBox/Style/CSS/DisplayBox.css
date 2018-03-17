@@ -1,0 +1,15 @@
+.DisplayBox{
+  width: 100%;
+  min-width: inherit;
+  border-bottom: solid 2px white;
+  margin: 0px auto;
+  background: #dbdbdb;
+}
+
+.contents{
+  width: calc(100% - 20px);
+  min-width: 700px;
+  min-height: calc(400px - 20px);
+  margin: 0px auto;
+  padding: 10px 0px;
+}

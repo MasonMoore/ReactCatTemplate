@@ -1,0 +1,9 @@
+.MenuTitle {
+  height: 100%;
+  width: 100px;
+  overflow: hidden;
+  float: left;
+  display: block;
+  text-align: center;
+  padding-top: 10px;
+}
