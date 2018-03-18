@@ -1,0 +1,41 @@
+.ImageDisplay{
+    max-width: 100%;
+    max-height: 100%;
+    position: fixed;
+    z-index: 100;
+    top:0;
+    bottom:0;
+    right: 0;
+    left: 0;
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+.HeaderBar {
+  height: 40px;
+  border-bottom: solid 0.0625em rgba(255, 255, 255, 0.25);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.ImageBackDrop{
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: solid 0.0625em rgba(255, 255, 255, 0.25);
+  border-radius: 0.625em;
+  padding-bottom: 40px;
+}
+
+.ImageHolder {
+  z-index: 101;
+  margin:auto;
+  height: 90%;
+  width: 90%;
+  display: block;
+}
+
+.ImageDisplay img {
+    border-radius: 0.625em;
+    max-width: 100%;
+    max-height: 100%;
+  }

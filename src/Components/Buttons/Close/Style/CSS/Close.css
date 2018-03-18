@@ -1,0 +1,15 @@
+.Close{
+  height: 2.5em;
+  width: 2.5em;
+  float: right;
+  text-align: center;
+  color: white;
+  border: solid .125em white;
+  border-radius: 0.625em;
+  display: block;
+}
+
+.Close:before {
+    content: "×";
+    font-size: 30px;
+}

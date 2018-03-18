@@ -5,7 +5,8 @@
   background: #14a5ff;
   font-family: Lucida Console;
   overflow: hidden;
-  border-bottom: solid 2px white;
+  border-bottom: solid .125em white;
+
 }
 
 .MenuBar ul {

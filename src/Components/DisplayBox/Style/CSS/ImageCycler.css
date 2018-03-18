@@ -1,5 +1,6 @@
 .ImageCycler{
   background: #d1d1d1;
+  border-radius: 0.625em;
   max-width: 78em;
   max-height:30em;
   display: block;

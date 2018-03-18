@@ -17,9 +17,9 @@ constructor(props){
   render() {
     return (
       <div className="SimplePage">
-      <MainMenu
-        menuItems={this.state.menuItems}
-      />
+        <MainMenu
+          menuItems={this.state.menuItems}
+          />
         {this.props.children}
       </div>
     );

@@ -2,6 +2,7 @@
   max-width: 78em;
   display: block;
   background: #d1d1d1;
+  border-radius: 0.625em;
   margin-top: .625em;
   overflow: hidden;
 }

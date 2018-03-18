@@ -16,14 +16,13 @@ class DisplayBox extends Component {
   constructor(props){
     super(props)
     this.state = {
-      expanded:false,
-      overflown:true
+      expanded:false
     }
     this.onExpand = this.onExpand.bind(this);
   }
 
   onExpand() {
-    this.setState({expanded: true, overflown: false})
+    this.setState({expanded: true})
   }
 
   render() {
