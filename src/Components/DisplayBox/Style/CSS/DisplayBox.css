@@ -4,6 +4,7 @@
   margin: 0em auto;
   background: #dbdbdb;
   display: block;
+  position: relative;
 }
 
 .Collapsed {

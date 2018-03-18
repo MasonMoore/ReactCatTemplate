@@ -6,6 +6,8 @@ import classNames from 'classnames'
 import DisplayBoxTitle from './DisplayBoxTitle';
 import ImageCycler from './ImageCycler';
 import DisplayBoxDescription from './DisplayBoxDescription';
+import Expand from '../Buttons/Expand/Expand';
+
 //Style
 import './Style/CSS/DisplayBox.css';
 
@@ -14,8 +16,14 @@ class DisplayBox extends Component {
   constructor(props){
     super(props)
     this.state = {
-      expanded:false
+      expanded:false,
+      overflown:true
     }
+    this.onExpand = this.onExpand.bind(this);
+  }
+
+  onExpand() {
+    this.setState({expanded: true, overflown: false})
   }
 
   render() {
@@ -30,9 +38,16 @@ class DisplayBox extends Component {
             image={this.props.image}
           />
           <DisplayBoxDescription
+            ref={(displayBoxDescription)=>{this.displayBoxDescription = displayBoxDescription}}
             description={this.props.description}
           />
         </div>
+        {!this.state.expanded ?
+          <Expand
+            onExpand={this.onExpand}
+          />
+          : null
+        }
       </div>
     );
   }

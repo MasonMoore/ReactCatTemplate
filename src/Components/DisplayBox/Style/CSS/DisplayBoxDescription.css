@@ -4,10 +4,10 @@
   background: #d1d1d1;
   margin-top: .625em;
   overflow: hidden;
-  min-height: calc(35% - .125em);
 }
 
 .description {
+  min-height: calc(35% - .125em);
   padding: .625em;
 
 }

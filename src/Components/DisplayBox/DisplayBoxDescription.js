@@ -8,9 +8,9 @@ class DisplayBoxDescription extends Component {
   render() {
     return (
       <div className={"DisplayBoxDescription"}>
-        <div className="description">
+          <div className="description">
           {this.props.description}
-        </div>
+          </div>
       </div>
     );
   }
