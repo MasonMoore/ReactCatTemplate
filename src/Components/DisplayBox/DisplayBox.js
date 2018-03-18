@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import classNames from 'classnames'
 //Components
 import DisplayBoxTitle from './DisplayBoxTitle';
-import ImageCycler from './ImageCycler';
+import DisplayImage from './DisplayImage';
 import DisplayBoxDescription from './DisplayBoxDescription';
 import Expand from '../Buttons/Expand/Expand';
 
@@ -16,7 +16,8 @@ class DisplayBox extends Component {
   constructor(props){
     super(props)
     this.state = {
-      expanded:false
+      expanded:false,
+      showButtons: false
     }
     this.onExpand = this.onExpand.bind(this);
   }
@@ -25,23 +26,30 @@ class DisplayBox extends Component {
     this.setState({expanded: true})
   }
 
+  onMouseHover(isHovering){
+    this.setState({showButtons: isHovering})
+  }
+
   render() {
     let expanded = this.state.expanded ? "Expanded" : "Collapsed";
     return (
-      <div className={classNames("DisplayBox", expanded)}>
+      <div className={classNames("DisplayBox", expanded)}
+        onMouseOver={()=>this.onMouseHover(true)}
+        onMouseLeave={()=>this.onMouseHover(false)}
+      >
         <div className="contents">
           <DisplayBoxTitle
             displayBoxTitle={this.props.title}
           />
-          <ImageCycler
-            image={this.props.image}
+          <DisplayImage
+            images={this.props.images}
           />
           <DisplayBoxDescription
             ref={(displayBoxDescription)=>{this.displayBoxDescription = displayBoxDescription}}
             description={this.props.description}
           />
         </div>
-        {!this.state.expanded ?
+        {!this.state.expanded  && this.state.showButtons ?
           <Expand
             onExpand={this.onExpand}
           />

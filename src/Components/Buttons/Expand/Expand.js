@@ -9,7 +9,7 @@ class Expand extends Component {
       <div className={"Expand"}
         onClick={()=>this.props.onExpand()}
       >
-        <p>Expand</p>
+        <p/>
       </div>
     );
   }

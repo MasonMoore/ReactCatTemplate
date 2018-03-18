@@ -1,4 +1,4 @@
-.ImageCycler{
+.DisplayImage{
   background: #d1d1d1;
   border-radius: 0.625em;
   max-width: 78em;
@@ -8,7 +8,17 @@
   overflow: hidden;
 }
 
-.ImageCycler img {
+.DisplayButtonsContainer{
+  height: 2.6em;
+  right: 0em;
+  padding: 10px 20px;
+  position: absolute;
+  border-radius: 0.625em 0.625em 0 0;
+  text-align: center;
+  color: white;
+}
+
+.DisplayImage img {
   display: block;
   margin: 0 auto;
   max-width: 100%;
