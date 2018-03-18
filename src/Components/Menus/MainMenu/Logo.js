@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 //Style
 import './Style/CSS/Logo.css';
-import mainLogo from './Style/Images/Logo.png';
+import mainLogo from './Style/Images/Logo2.png';
 
 
 class Logo extends Component {

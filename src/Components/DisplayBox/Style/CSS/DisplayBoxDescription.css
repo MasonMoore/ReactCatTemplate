@@ -5,6 +5,9 @@
   border-radius: 0.625em;
   margin-top: .625em;
   overflow: hidden;
+  box-shadow: 0.3125em 0.3125em 0.3125em grey;
+  color: black;
+  text-shadow: 0.03125em 0.03125em 0.0625em white, 0.09375em 0.09375em 0.09375em grey;
 }
 
 .description {
