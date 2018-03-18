@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 //Style
 import './Style/CSS/MenuBar.css';
 
-class MenuItem extends Component {
+class MenuBar extends Component {
   render() {
     return (
       <div className={"MenuBar"}>
@@ -16,8 +16,8 @@ class MenuItem extends Component {
   }
 }
 
-MenuItem.propTypes = {
+MenuBar.propTypes = {
   menuItem: PropTypes.string
 }
 
-export default MenuItem;
+export default MenuBar;

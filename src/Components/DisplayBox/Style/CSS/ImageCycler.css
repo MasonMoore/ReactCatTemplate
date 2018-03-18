@@ -1,8 +1,7 @@
 .ImageCycler{
   background: #d1d1d1;
-  min-width: 700px;
-  max-width: 1250px;
-  height: 400px;
+  max-width: 78em;
+  max-height:30em;
   display: block;
   margin-top: 10px;
   overflow: hidden;

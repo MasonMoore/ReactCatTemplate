@@ -1,18 +1,18 @@
 .MainDisplay{
   width: 65%;
-  height: calc(100% - 60px);
-  min-width: 750px;
-  border: solid 2px white;
-  margin: 5px auto 0px;
+  min-width: 22.5em;
+  height: calc(100% - 4em);
+  border: solid .125em white;
+  margin: .375em auto 0em;
   overflow: hidden;
 }
 
 .MainContents{
-  overflow: scroll;
-  height: calc(100% - 20px);
+  overflow: auto;
+  height: calc(100% - 2.5em);
 }
 
 ::-webkit-scrollbar {
-    width: 0px;
+    width: 0em;
     background: transparent;
 }

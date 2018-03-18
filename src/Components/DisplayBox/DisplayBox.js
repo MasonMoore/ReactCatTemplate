@@ -1,5 +1,7 @@
 //React
 import React, { Component } from 'react';
+//Imports
+import classNames from 'classnames'
 //Components
 import DisplayBoxTitle from './DisplayBoxTitle';
 import ImageCycler from './ImageCycler';
@@ -9,10 +11,17 @@ import './Style/CSS/DisplayBox.css';
 
 
 class DisplayBox extends Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      expanded:false
+    }
+  }
 
   render() {
+    let expanded = this.state.expanded ? "Expanded" : "Collapsed";
     return (
-      <div className="DisplayBox">
+      <div className={classNames("DisplayBox", expanded)}>
         <div className="contents">
           <DisplayBoxTitle
             displayBoxTitle={this.props.title}

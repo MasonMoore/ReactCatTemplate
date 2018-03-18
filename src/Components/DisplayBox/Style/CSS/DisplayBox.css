@@ -1,15 +1,24 @@
 .DisplayBox{
-  width: 100%;
   min-width: inherit;
-  border-bottom: solid 2px white;
-  margin: 0px auto;
+  border-bottom: solid .125em white;
+  margin: 0em auto;
   background: #dbdbdb;
+  display: block;
+}
+
+.Collapsed {
+  height: calc(100% - .125em);
+  overflow: hidden;
+}
+
+.Expanded {
+  min-height: calc(100% - .125em);
 }
 
 .contents{
-  width: calc(100% - 20px);
-  min-width: 700px;
-  min-height: calc(400px - 20px);
-  margin: 0px auto;
-  padding: 10px 0px;
+  width: calc(100% - 1.25em);
+  height: calc(100% - 1.5em);
+  margin: 0em auto;
+  padding: .625em 0em;
+  display: block;
 }
