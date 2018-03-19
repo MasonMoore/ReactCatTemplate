@@ -1,11 +1,11 @@
 .Expand{
-  background: black;
-  opacity: 0.75;
+  background: rgba(0, 0, 0, 0.75);
   height: 2.5em;
   width: 100%;
   position: absolute;
   bottom: 0;
-  border-radius: 0.625em 0.625em 0 0;
+  border-radius: 0.625em 0.625em 0em 0em;
+  border: 1px solid rgba(255, 255, 255, .5);
   text-align: center;
   color: white;
 }

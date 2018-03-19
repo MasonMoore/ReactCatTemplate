@@ -17,7 +17,7 @@ class DisplayBox extends Component {
     super(props)
     this.state = {
       expanded:false,
-      showButtons: false
+      showButtons: this.props.isMobile ? true : false
     }
     this.onExpand = this.onExpand.bind(this);
   }
@@ -27,7 +27,7 @@ class DisplayBox extends Component {
   }
 
   onMouseHover(isHovering){
-    this.setState({showButtons: isHovering})
+    this.setState({showButtons: this.props.isMobile ? true : isHovering})
   }
 
   render() {

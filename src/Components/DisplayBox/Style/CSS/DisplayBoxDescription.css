@@ -8,6 +8,7 @@
   box-shadow: 0.3125em 0.3125em 0.3125em grey;
   color: black;
   text-shadow: 0.03125em 0.03125em 0.0625em white, 0.09375em 0.09375em 0.09375em grey;
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .description {

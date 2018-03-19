@@ -1,5 +1,7 @@
 //React
 import React, { Component } from 'react';
+//Utils
+import MediaQuery from '../../Utils/MediaQuery';
 //Components
 import SimplePage from '../../Components/SimplePage/SimplePage';
 import MainDisplay from '../../Components/MainDisplay/MainDisplay';
@@ -51,6 +53,8 @@ class App extends Component {
         }
       ]
     }
+    this.isMobile = MediaQuery.checkIfMobile();
+    console.log(this.isMobile);
   }
 
   render() {
@@ -66,6 +70,7 @@ class App extends Component {
               title={item.title}
               images={item.images}
               description={item.description}
+              isMobile={this.isMobile}
             />
           )}
           </MainDisplay>
