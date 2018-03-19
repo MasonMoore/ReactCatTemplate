@@ -2,11 +2,11 @@
   height: 38px;
   width: 100%;
   color: white;
-  text-shadow: .5px .5px 1px Black, 0.3125em 0.3125em 0.3125em grey;
+  text-shadow: 0.0625em 0.0625em 0.125em Black, 0 0 0.125em black, 0.3125em 0.3125em 0.3125em grey;
   background: #14a5ff;
   font-family: Lucida Console;
   overflow: hidden;
-  border-bottom: solid .125em white;
+  border-bottom: ridge .125em white;
   box-shadow: 0.3125em 0.3125em 0.3125em grey;
 }
 

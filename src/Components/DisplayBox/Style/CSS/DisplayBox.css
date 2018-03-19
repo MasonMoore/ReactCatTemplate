@@ -1,6 +1,6 @@
 .DisplayBox{
   min-width: inherit;
-  border-bottom: solid .125em white;
+  border-bottom: groove .125em white;
   margin: 0em auto;
   background: #dbdbdb;
   display: block;
@@ -9,12 +9,12 @@
 
 .Collapsed {
   min-height: 37.5em;
-  height: calc(100% - .125em);
+  height: calc(100% - .125em + 0.125em);
   overflow: hidden;
 }
 
 .Expanded {
-  min-height: calc(100% - .125em);
+  min-height: calc(100% - .125em + 0.125em);
 }
 
 .contents{

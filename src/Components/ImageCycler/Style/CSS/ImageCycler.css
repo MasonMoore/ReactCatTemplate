@@ -14,7 +14,7 @@
 
 .ImageCycler .HeaderBar {
   height: 2.5em;
-  border-bottom: solid 0.0625em rgba(255, 255, 255, 0.25);
+  border-bottom: groove 0.0625em rgba(255, 255, 255, 0.25);
   padding: 0.3125em 0.3125em 0.625em;
   margin-bottom: 0.625em;
 }
@@ -22,7 +22,7 @@
 .ImageBackDrop{
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  border: solid 0.0625em rgba(255, 255, 255, 0.25);
+  border: groove 0.0625em rgba(255, 255, 255, 0.25);
   border-radius: 0.625em;
   padding-bottom: 2.8125em;
   box-shadow: 0.3125em 0.3125em 0.3125em black;
@@ -37,7 +37,7 @@
 }
 
 .ImageCycler img {
-    border: solid 0.0625em rgba(255, 255, 255, 0.25);
+    border: groove 0.0625em rgba(255, 255, 255, 0.25);
     border-radius: 0.625em;
     box-shadow: 0.3125em 0.3125em 0.3125em black;
     max-width: 100%;
