@@ -74,14 +74,20 @@ class App extends Component {
       ],
       title: "Simba Cat"
     }
+    this.reRoute = this.reRoute.bind(this);
     this.isMobile = MediaQuery.checkIfMobile();
-    console.log(this.isMobile);
+  }
+
+  reRoute(link){
+    this.props.history.push(link);
   }
 
   render() {
     return (
       <div className="App">
-        <SimplePage>
+        <SimplePage
+          reRoute={this.reRoute}
+        >
           <MainDisplay
             title={this.state.title}
           >

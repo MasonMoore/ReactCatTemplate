@@ -5,9 +5,22 @@ import PropTypes from 'prop-types'
 import './Style/CSS/MenuItem.css';
 
 class MenuItem extends Component {
+  constructor(props){
+    super(props)
+  }
+
+  handleOnClick(){
+    if(this.props.reRoute){
+      this.props.reRoute(this.props.link);
+    }
+  }
+
   render() {
     return (
-      <div className="MenuItem">
+      <div
+        className="MenuItem"
+        onClick={()=>this.handleOnClick()}
+      >
       <li>
         {this.props.menuItem}
         </li>
@@ -17,7 +30,10 @@ class MenuItem extends Component {
 }
 
 MenuItem.propTypes = {
-  menuItem: PropTypes.string
+  menuItem: PropTypes.string,
+  link: PropTypes.string,
+  onClick: PropTypes.func
+
 }
 
 export default MenuItem;

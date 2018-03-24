@@ -9,7 +9,7 @@
     left: 0;
     padding: 2.5em 1.25em;
     background-color: rgba(0, 0, 0, 0.8);
-    overflow: auto;
+    overflow: hidden;
   }
 
 .ImageCycler .HeaderBar {
