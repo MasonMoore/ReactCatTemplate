@@ -1,4 +1,4 @@
-# ReactCatTemplate
+# ReactTemplate
 A basic webpage template built in react
 
 
